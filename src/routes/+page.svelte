@@ -128,6 +128,10 @@
         .partOne img, .partTwo img{
             max-width: 100%;
         }
+
+        .vision img{
+            display: none;
+        }
     }
 
     @media screen and (max-width: 750px){
@@ -135,6 +139,11 @@
             aspect-ratio: 16/9;
             height: auto;
             width: 100%;
+        }
+
+        .vision p{
+            width: initial;
+            padding: 0 15px;
         }
     }
 </style>
