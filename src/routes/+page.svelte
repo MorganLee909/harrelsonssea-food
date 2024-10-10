@@ -41,6 +41,88 @@
         <img src={visionOne} alt="Man holding fish in front of sign on building">
     </div>
 
+    <div class="locations">
+        <h1>2nd Location Now Open!</h1>
+
+        <div class="location">
+            <h2>Murrells Inlet</h2>
+            <a href="https://www.google.com/maps/place/Harrelson's+Seafood+Market+Pawley's+Island/@33.4328599,-79.1382823,20.5z/data=!4m6!3m5!1s0x890031031f80315d:0x3b85f623e370b3ce!8m2!3d33.4330432!4d-79.1379417!16s%2Fg%2F11vycd4xft?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                4368 Highway 17 Business, Murrells Inlet, SC 29576
+            </a>
+            <a href="tel:+18436515707">(843) 651-5707</a>
+            <table>
+                <caption>Hours</caption>
+                <tr>
+                    <td>Sunday</td>
+                    <td>9am - 6pm</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>8am - 7pm</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>8am - 7pm</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8am - 7pm</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>8am - 7pm</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>8am - 7pm</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>8am - 7pm</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="location">
+            <h2>Pawleys Island</h2>
+            <a href="https://www.google.com/maps/place/Harrelson's+Seafood+Market+Pawley's+Island/@33.4328599,-79.1382823,20.5z/data=!4m6!3m5!1s0x890031031f80315d:0x3b85f623e370b3ce!8m2!3d33.4330432!4d-79.1379417!16s%2Fg%2F11vycd4xft?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                9752 Ocean Highway, Pawleys Island, SC 29585
+            </a>
+            <a href="tel:+8433140648">(843) 314-0648</a>
+            <table>
+                <caption>Hours</caption>
+                <tr>
+                    <td>Sunday</td>
+                    <td>9am - 6pm</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>9am - 6pm</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>9am - 6pm</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>9am - 6pm</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>9am - 6pm</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>9am - 6pm</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>9am - 6pm</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
     <Footer/>
 </div>
 
@@ -117,6 +199,45 @@
         width: 350px;
     }
 
+    .locations{
+        display: flex;
+        justify-content: space-around;
+        color: rgb(200, 200, 200);
+        position: relative;
+    }
+
+    .locations h1{
+        font-size: 58px;
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .location{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 0 35px 0;
+    }
+
+    .location h2{
+        font-size: 38px;
+    }
+
+    .location a{
+        color: rgb(200, 200, 200);
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    table{
+        font-size: 18px;
+        border-spacing: 35px 5px;
+    }
+
     @media screen and (max-width: 1300px){
         .sectionTwo{
             height: initial;
@@ -138,6 +259,12 @@
         }
     }
 
+    @media screen and (max-width: 1200px){
+        .locations{
+            flex-direction: column;
+        }
+    }
+
     @media screen and (max-width: 750px){
         iframe{
             aspect-ratio: 16/9;
@@ -148,6 +275,33 @@
         .vision p{
             width: initial;
             padding: 0 15px;
+        }
+
+        .locations h1{
+            font-size: 38px;
+        }
+
+        .location{
+            margin-top: 55px;
+        }
+
+        .location:nth-child(3){
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        .locations h1{
+            font-size: 32px;
+        }
+
+        .location a{
+            font-size: 18px;
+            text-align: center;
+        }
+
+        table{
+            font-size: 16px;
         }
     }
 </style>
