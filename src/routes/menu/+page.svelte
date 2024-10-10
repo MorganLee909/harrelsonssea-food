@@ -214,7 +214,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 35px;
-        height:50px;
+        height: 50px;
         width: 100vw;
         background: rgb(150, 150, 150);
         position: fixed;
