@@ -7,7 +7,7 @@
     <div class="imageCover"></div>
 
     <div class="menu">
-        <h1>Harrelsons Seafood</h1>
+        <h1>Harrelson's Seafood</h1>
         <h2>Fresh Fish Daily</h2>
         <h3>Directly from Local Fishermen</h3>
     </div>

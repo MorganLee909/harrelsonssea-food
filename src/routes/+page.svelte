@@ -1,9 +1,12 @@
 <script>
     import "../global.css";
     import Header from "./Header.svelte";
+    import Footer from "./Footer.svelte";
 
     import oysterAndKnife from "$lib/oysterAndKnife.webp";
     import localPeople from "$lib/localPeople.webp";
+    import visionOne from "$lib/visionOne.webp";
+    import visionTwo from "$lib/visionTwo.webp";
 </script>
 
 <div class="container">
@@ -20,24 +23,78 @@
             <h1>...from Good Local People</h1>
         </div>
     </div>
+
+    <div class="vision">
+        <img src={visionTwo} alt="Man holding a fish">
+        <div class="visionText">
+            <h1>Our Vision</h1>
+            <p>We want to be the leader in providing fresh, local seafood with exceptional customer service. We are a family owned business specializing in retail and wholesale seafood sales. We want our fish to be on the menu of your favorite local seafood restaurant. We want our customers to have the best possible experience so that they will tell their friends.</p>
+        </div>
+        <img src={visionOne} alt="Man holding fish in front of sign on building">
+    </div>
+
+    <Footer/>
 </div>
 
 <style>
     .sectionTwo{
         background: rgb(0, 0, 25);
         color: white;
+        padding: 35px;
+        position: relative;
+        height: 850px;
     }
 
     .sectionTwo h1{
-        color: white;
+        color: rgb(200, 200, 200);
         font-size: 48px;
     }
 
-    .sectionTwo img{
-        width: 35%;
+    .partOne{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        width: 50%;
     }
 
-    .partOne{
-        margin: 35px;
+    .partOne img{
+        width: 100%;
+    }
+
+    .partTwo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 35px;
+        right: 35px;
+    }
+
+    .vision{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(0, 0, 25);
+        color: rgb(200, 200, 200);
+        padding-top: 55px;
+    }
+
+    .vision h1{
+        text-align: center;
+        font-size: 58px;
+        text-decoration: underline;
+    }
+
+    .vision p{
+        font-size: 25px;
+        width: 500px;
+        text-align: justify;
+    }
+
+    .vision img{
+        width: 350px;
     }
 </style>
