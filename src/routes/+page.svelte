@@ -275,6 +275,8 @@
         .vision p{
             width: initial;
             padding: 0 15px;
+            font-size: 22px;
+            line-height: 38px;
         }
 
         .locations h1{
@@ -291,13 +293,13 @@
     }
 
     @media screen and (max-width: 600px){
-        .locations h1{
-            font-size: 32px;
-        }
-
         .location a{
             font-size: 18px;
             text-align: center;
+        }
+
+        .location:nth-child(2){
+            margin-top: 115px;
         }
 
         table{
