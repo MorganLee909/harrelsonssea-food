@@ -10,6 +10,12 @@
         <h1>Harrelson's Seafood</h1>
         <h2>Fresh Fish Daily</h2>
         <h3>Directly from Local Fishermen</h3>
+        <a href="/menu" class="menuLink">
+            <p>Menu</p> 
+            <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" color="#000000">
+                <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </a>
     </div>
 </header>
 
@@ -52,19 +58,37 @@
         color: white;
     }
 
+    .menuLink{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        color: black;
+        background: rgb(200, 200, 200);
+        text-decoration: none;
+        padding: 5px 5px 5px 15px;;
+        border-radius: 5px;
+        font-size: 28px;
+    }
+
+    .menuLink:hover{
+        background: rgb(150, 150, 150);
+    }
+
     h1, h2, h3{
         text-align: center;
     }
 
-    .menu h1{
+    h1{
         font-size: 68px;
     }
 
-    .menu h2{
+    h2{
         font-size: 48px;
     }
 
-    .menu h3{
+    h3{
         font-size: 38px;
     }
 
