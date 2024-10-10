@@ -24,6 +24,10 @@
         </div>
     </div>
 
+    <div class="video">
+        <iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/fJ6-nebvkeI?si=vkyRA5r90UBQ8IZn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
     <div class="vision">
         <img src={visionTwo} alt="Man holding a fish">
         <div class="visionText">
@@ -38,7 +42,6 @@
 
 <style>
     .sectionTwo{
-        background: rgb(0, 0, 25);
         color: white;
         padding: 35px;
         position: relative;
@@ -73,13 +76,25 @@
         right: 35px;
     }
 
+    .video{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 55px 0;
+    }
+
+    iframe{
+        height: 500px;
+        width: 750px;
+    }
+
     .vision{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background: rgb(0, 0, 25);
         color: rgb(200, 200, 200);
         padding-top: 55px;
+        margin-bottom: 35px;
     }
 
     .vision h1{
