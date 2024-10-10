@@ -52,6 +52,10 @@
         color: white;
     }
 
+    h1, h2, h3{
+        text-align: center;
+    }
+
     .menu h1{
         font-size: 68px;
     }
@@ -62,5 +66,11 @@
 
     .menu h3{
         font-size: 38px;
+    }
+
+    @media screen and (max-width: 600px){
+        .menu h1{
+            font-size: 58px;
+        }
     }
 </style>

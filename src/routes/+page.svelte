@@ -112,4 +112,29 @@
     .vision img{
         width: 350px;
     }
+
+    @media screen and (max-width: 1300px){
+        .sectionTwo{
+            height: initial;
+        }
+
+        .partOne, .partTwo{
+            position: static;
+            width: 100%;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .partOne img, .partTwo img{
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 750px){
+        iframe{
+            aspect-ratio: 16/9;
+            height: auto;
+            width: 100%;
+        }
+    }
 </style>
