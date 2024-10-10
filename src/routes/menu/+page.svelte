@@ -32,6 +32,10 @@
     import seafoodBasket from "$lib/menu/seafoodBasket.webp";
 </script>
 
+<svelte:head>
+    <title>Menu | Harrelson's Seafood</title>
+</svelte:head>
+
 <header>
     <a class="home" href="/">Harrelson's Seafood</a>
 </header>

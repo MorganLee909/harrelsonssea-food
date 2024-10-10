@@ -37,6 +37,10 @@
     const images = [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twentyOne, twentyTwo, twentyThree, twentyFour, twentyFive, twentySix, twentySeven, twentyEight, twentyNine, thirty, thirtyOne, thirtyTwo];
 </script>
 
+<svelte:head>
+    <title>Gallery | Harrelson's Seafood</title>
+</svelte:head>
+
 <header>
     <a class="home" href="/">Harrelson's Seafood</a>
 </header>

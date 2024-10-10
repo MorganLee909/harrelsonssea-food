@@ -9,6 +9,10 @@
     import visionTwo from "$lib/visionTwo.webp";
 </script>
 
+<svelte:head>
+    <title>Harrelson's Seafood</title>
+</svelte:head>
+
 <div class="container">
     <Header/>
 
